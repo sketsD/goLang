@@ -1,0 +1,26 @@
+{
+  "name": "english-helper",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "concurrently --kill-others \"npm run watch\" \"nodemon dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@types/express": "github:types/express",
+    "@types/uuid": "^10.0.0",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.0.3"
+  }
+}

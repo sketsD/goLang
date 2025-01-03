@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* input{
+  background: red;
+} */
+body {
+  overflow-x: hidden;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(19, 78, 74) inset !important;
+  -webkit-text-fill-color: white;
+}
+
+#navBarElement .active,
+#sideBarElement .active {
+  @apply border-emerald-600 text-emerald-600 dark:border-white dark:text-white;
+}
+#sideBarElementNavigation a li:hover,
+#sideBarElementNavigation a.active li {
+  div {
+    border-color: white;
+  }
+  button {
+    background: white;
+  }
+}
+.dark #sideBarElementNavigation a li:hover,
+.dark #sideBarElementNavigation a.active li {
+  div {
+    border-color: white;
+  }
+  button {
+    background: #020617;
+  }
+}
+
+#cabinetMessageBg {
+  /* background-color: #dfdbe5; */
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* ::-webkit-scrollbar-thumb {
+  background: #ff0000;
+} */
+/* slate-950 */
+/* teal-950 */
+/* footer bg-neutral-600  bg-gray-800 */
+/* emerald-600 */
+/* fields gray-600 */
+/* dark:bg-teal-900/90 dark:border-teal-950 */
